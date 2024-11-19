@@ -23,7 +23,7 @@ While Terraform can't directly secure the root account (since root configuration
 - Enable MFA for the root account: Manually follow [AWS's documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-virt-mfa-for-root.html)to set this up.
 - Stop using the root account for daily operations
 - Store credentials securely: Use a password manager (e.g., LastPass or 1Password) to securely store root credentials.
-- 
+
 ## Steps to Deploy
 1.	Clone this repository:
 ```bash
