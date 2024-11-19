@@ -40,4 +40,11 @@ terraform plan
 terraform apply
 ```
 
+You will be able to see the group names, user names, and password policies details as outputs on your terminal. You can verify that these have indeed been created on the AWS console.
+
+If you did this project for hands-on practice then it is recommended to cleanup at the end.
+Use the following command to destroy all the resources that were created:
+```bash
+terraform destroy
+```
 
