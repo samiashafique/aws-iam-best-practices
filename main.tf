@@ -1,4 +1,4 @@
-#defining the IAM groups and attaching policies
+#Defining the IAM groups and attaching policies
 
 resource "aws_iam_group" "developers" {
   name = "Developers"
@@ -65,7 +65,8 @@ resource "aws_iam_group_policy_attachment" "analysts_rds" {
   group      = aws_iam_group.analysts.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonRDSReadOnlyAccess"
 }
-#creating users and adding them to their respective groups
+
+#Creating users and adding them to their respective groups
 
 resource "aws_iam_user" "developer_users" {
   for_each = toset(var.developer_users)
